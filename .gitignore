@@ -1,0 +1,3 @@
+# renders and comparison sheets: they include or trace copyrighted reference paintings, so they stay local
+look-tests/**/out/
+__pycache__/
