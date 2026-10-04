@@ -65,3 +65,15 @@ For assets (kiln):
 - Foliage as leaf cards on a branch skeleton, with painted stroke textures, in place of solid shapes.
 - Rock built from deliberate planes, ledges and fractures in place of noise.
 - Painted colour variation on every surface.
+
+## `paint-filter/` (2026-10-04)
+
+Blender's directional paint filter (the anisotropic Kuwahara compositor node) applied to four of the recreation renders. `run.sh` regenerates the sheets under `out/`.
+
+- It makes short strokes only where a render already has fine directional detail: grass fields and leaf-card foliage gain the most. On smooth rock, clouds and gradients it changes nothing.
+- It softens every edge equally, and cannot keep one edge sharp and lose another on purpose.
+- Distant small detail suffers: tiny buildings turn to mush at medium strength, and thin lines break at high strength.
+- Best setting at 1280x720: anisotropic, size 8, uniformity 4, sharpness 1, eccentricity 1. Worth about half a rating point on foliage-heavy scenes and nothing on the others.
+- Posterising, a procedural canvas weave and edge darkening were each tried on top and each made it worse.
+
+For the engine: a real-time version is worth having as a cheap unifying pass, at small radius and shrinking with depth, but it is low priority and its behaviour on moving grass is untested. The look is decided by the assets: the filter only pays off where the assets already supply directional structure.

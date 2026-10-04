@@ -1,0 +1,10 @@
+[
+ {"name": "p_ecc0",   "size": 8, "uniformity": 4, "eccentricity": 0.0},
+ {"name": "p_ecc2",   "size": 8, "uniformity": 4, "eccentricity": 2.0},
+ {"name": "p_sharp0", "size": 8, "uniformity": 4, "sharpness": 0.0},
+ {"name": "p_unif0",  "size": 8, "uniformity": 0},
+ {"name": "p_unif16", "size": 8, "uniformity": 16},
+ {"name": "p_classic_hp", "type": "Classic", "size": 8, "high_precision": true},
+ {"name": "p_2pass",  "size": 8, "uniformity": 4, "passes": 2},
+ {"name": "p_size30", "size": 30, "uniformity": 8}
+]

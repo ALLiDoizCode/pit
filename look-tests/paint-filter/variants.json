@@ -1,0 +1,10 @@
+[
+ {"name": "aniso_subtle",  "size": 4,  "uniformity": 2},
+ {"name": "aniso_mid",     "size": 8,  "uniformity": 4},
+ {"name": "aniso_strong",  "size": 14, "uniformity": 8},
+ {"name": "classic_mid",   "type": "Classic", "size": 8},
+ {"name": "mid_preblur",   "size": 8, "uniformity": 4, "preblur": 1.5},
+ {"name": "mid_posterize", "size": 8, "uniformity": 4, "posterize": 10},
+ {"name": "mid_canvas",    "size": 8, "uniformity": 4, "canvas": 0.5},
+ {"name": "mid_edges",     "size": 8, "uniformity": 4, "edges": 0.25}
+]
